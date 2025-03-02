@@ -18,6 +18,14 @@
       "top": 64,
       "left": 370.4,
       "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -86.5,
+      "left": 70.7,
+      "rotate": 90,
+      "attrs": { "color": "red", "xray": "1" }
     }
   ],
   "connections": [
@@ -25,8 +33,10 @@
     [ "btn1:2.l", "uno:GND.2", "green", [ "v-29.89", "h35.38" ] ],
     [ "lcd1:GND", "uno:GND.3", "black", [ "h-28.8", "v124.8", "h-163.2" ] ],
     [ "lcd1:VCC", "uno:5V", "red", [ "h-19.2", "v124.9", "h-192" ] ],
-    [ "lcd1:SDA", "uno:A4", "green", [ "h-67.2", "v134.6", "h-67.2" ] ],
-    [ "lcd1:SCL", "uno:A5", "green", [ "h-86.4", "v144.3", "h-28.8" ] ]
+    [ "lcd1:SDA", "uno:A4", "magenta", [ "h-67.2", "v134.6", "h-67.2" ] ],
+    [ "lcd1:SCL", "uno:A5", "yellow", [ "h-86.4", "v144.3", "h-28.8" ] ],
+    [ "btn2:2.r", "uno:GND.1", "red", [ "v19.4", "h19" ] ],
+    [ "btn2:1.r", "uno:3", "red", [ "h57.6", "v0.2", "h57.6", "v37.8" ] ]
   ],
   "dependencies": {}
 }
